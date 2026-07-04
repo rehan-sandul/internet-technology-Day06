@@ -91,11 +91,11 @@ let heading = document.getElementById("counter display");
 // console.log(heading.);
 let number = 0;
 function increcounter() {
-    heading.innerText = "Rehan"+number++;
+    heading.innerText = "Rehan" + (++number);
     console.log("Clicked");
 
 }
 function decrecounter() {
-    heading.innerText = "Rehan"+number--;
+    heading.innerText = "Rehan"+ (--number);
     console.log("Clicked");
 }
