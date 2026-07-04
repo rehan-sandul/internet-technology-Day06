@@ -109,16 +109,38 @@ function decrecounter() {
 
 }*/
 
-function addnumbers() {
-    let num1 = Number(document.getElementById("num1").value) ;
-    let num2 = Number(document.getElementById("num2").value) ;
-    let result = num1 + num2;
-    document.getElementById("heading").innerText = "Sum: " + result;
-}
+// function addnumbers() {
+//     let num1 = Number(document.getElementById("num1").value) ;
+//     let num2 = Number(document.getElementById("num2").value) ;
+//     let result = num1 + num2;
+//     document.getElementById("heading").innerText = "Sum: " + result;
+// }
 
-function subtractnumbers() {
-    let num1=Number(document.getElementById("num1").value);
-    let num2=Number(document.getElementById("num2").value);
-    let result = num1 - num2;
-    document.getElementById("heading").innerText = "Difference: " + result;
+// function subtractnumbers() {
+//     let num1=Number(document.getElementById("num1").value);
+//     let num2=Number(document.getElementById("num2").value);
+//     let result = num1 - num2;
+//     document.getElementById("heading").innerText = "Difference: " + result;
+// }
+
+let customerList = [];
+
+function btnAddCustomerOnAction() {
+    let txtName = document.getElementById("txtName").value;
+    let txtAddress = document.getElementById("txtAddress").value;
+    let txtAge = document.getElementById("txtAge").value;
+    let txtEmail = document.getElementById("txtEmail").value;
+    let txtSalary = document.getElementById("txtSalary").value;
+
+    let customer = {
+        name: txtName,
+        address: txtAddress,
+        age: txtAge,
+        email: txtEmail,
+        salary: txtSalary
+    }
+
+    customerList.push(customer);
+
+    console.log(customerList);
 }
