@@ -1,5 +1,5 @@
 //-----------------Class (Customer1)-------------------------------
-class Customer {
+/* class Customer {
     name;
     age;
     address;
@@ -75,3 +75,8 @@ console.log(customer2.item[1].price);
 
 console.log(customer2.item[0].variant[1].name);
 console.log(customer2.item[0].variant[1].price);
+ */
+
+document.write("<h1>Customer Details</h1>");
+console.log(document);
+console.log(document.title);
