@@ -77,12 +77,25 @@ console.log(customer2.item[0].variant[1].name);
 console.log(customer2.item[0].variant[1].price);
  */
 
-//document.write("<h1>hello world</h1>");
+// DOM (Document Object Model) Manipulation -----------------------------------------------
+
+// document.write("<h2>Hello, World! 02</h2>");
 
 console.log(document.title);
 
-let heading = document.getElementById("heading");
 
-heading.innerText= "Rehan";
+let heading = document.getElementById("counter display");
 
-//console.log(heading);
+// heading.innerText = "Sharada";
+
+// console.log(heading.);
+let number = 0;
+function increcounter() {
+    heading.innerText = "Rehan"+number++;
+    console.log("Clicked");
+
+}
+function decrecounter() {
+    heading.innerText = "Rehan"+number--;
+    console.log("Clicked");
+}
