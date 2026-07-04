@@ -77,10 +77,12 @@ console.log(customer2.item[0].variant[1].name);
 console.log(customer2.item[0].variant[1].price);
  */
 
-//document.write("<h1>Customer Details</h1>");
+//document.write("<h1>hello world</h1>");
 
 console.log(document.title);
 
 let heading = document.getElementById("heading");
 
-console.log(heading);
+heading.innerText= "Rehan";
+
+//console.log(heading);
