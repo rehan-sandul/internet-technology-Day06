@@ -32,7 +32,18 @@ let customer2 = {
         id: 1,
         name: "Item 1",
         price: 100,
-        
+        variant: [
+            {
+                id: 1,
+                name: "Variant 1",
+                price: 10
+            },
+            {
+                id: 2,
+                name: "Variant 2",
+                price: 20
+            }
+        ]
     }, {
         id: 2,
         name: "Item 2",
@@ -54,7 +65,13 @@ console.log(customer2.age);
 console.log(customer2.address);
 console.log(customer2.salary);
 console.log(customer2.item);
+
 console.log(customer2.father.name);
 console.log(customer2.father.age);
 console.log(customer2.father.address);
+
 console.log(customer2.item[1].name);
+console.log(customer2.item[1].price);
+
+console.log(customer2.item[0].variant[1].name);
+console.log(customer2.item[0].variant[1].price);
