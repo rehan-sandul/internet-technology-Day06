@@ -53,7 +53,22 @@
     <br>
     <br>
 
-    <input type="button" style="background-color: green; color: white;" value="Add Customer" onclick="btnAddCustomerOnAction()">
+    <input type="button" style="background-color: green; color: white;" value="Add Customer"
+        onclick="btnAddCustomerOnAction()">
+    <br>
+
+ <table border="1" id="tblCustomers">
+        <tr>
+            <td>Name</td>
+            <td>Address</td>
+            <td>Age</td>
+            <td>Email</td>
+            <td>Salary</td>
+        </tr>
+    </table>
+
+    <input type="button" value="Load Table" onclick="loadTable()">
+
 
     <script src="app.js"></script>
 </body>
