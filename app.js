@@ -81,21 +81,30 @@ console.log(customer2.item[0].variant[1].price);
 
 // document.write("<h2>Hello, World! 02</h2>");
 
-console.log(document.title);
+//console.log(document.title);
 
 
-let heading = document.getElementById("counter display");
+//let heading = document.getElementById("counter display");
 
-// heading.innerText = "Sharada";
+// heading.innerText = "Rehan";
 
 // console.log(heading.);
-let number = 0;
+
+/* let number = 0;
 function increcounter() {
     heading.innerText = "Rehan" + (++number);
     console.log("Clicked");
 
 }
+
 function decrecounter() {
     heading.innerText = "Rehan"+ (--number);
     console.log("Clicked");
+} */
+
+function changeHeading() {
+    let txtinput = document.getElementById("txtinput");
+    console.log(txtinput.value);
+    heading.innerText = txtinput.value;
+
 }
